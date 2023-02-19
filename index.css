@@ -6,16 +6,16 @@ body {
 }
 
 #mode {
+    position: relative;
     color: white;
     font-weight: bold;
-    font-size: 10px;
+    font-size: 11px;
     text-align: center;
-    /* position: absolute; */
-    margin: 0px 0px 0px -3px;
+    margin: 18px 0px 3px -6px;    
 }
 
 .switch {
-    position:absolute;
+    position: absolute;
     top:10px;
     right: 10px;
     width: 40px; 
@@ -103,18 +103,18 @@ input:checked + .slider:before {
 }
 
 #title {
-    margin-top: 60px;    
+    margin-top: 50px;    
 }
 
 #top-container {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 30%;
     width: 100%;
     background: #6943FF;
     text-align: center;
     align-items: center;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     box-shadow: 0px 0px 1px 1px #888888;
     border-radius: 5px 5px 0px 0px;
     color: #FFFFFF;
@@ -124,7 +124,7 @@ input:checked + .slider:before {
 #bottom-container {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 10%;
     width: 100%;
     border-radius: 0px 0px 5px 5px;
     box-shadow: 0px 0px 1px 1px #888888;
@@ -141,20 +141,19 @@ input:checked + .slider:before {
     border: 2px solid #B295FF;
     border-radius: 5px;
     background: #6943FF;
-    width: 65px;
-    height: 42px;
+    width: 78px;
+    height: 53px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 800;
     font-size: 42px;
     color: #FFFFFF;
-    padding: 7px;
     text-align: center;
     margin-bottom: 8px;
 }
 
 #convert-btn {
-    width: 84px;
+    width: 80px;
     text-align: center;
     font-weight: 500;
     font-size: 14px;
@@ -169,7 +168,6 @@ input:checked + .slider:before {
     color: #3D3D3D;
     margin: 10px 0px 10px 0px;
     padding: 7px;
-    margin-bottom: 20px;
 }
 
 #length,#volume,#mass {
