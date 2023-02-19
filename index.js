@@ -23,6 +23,17 @@ convertBtn.addEventListener("click", function() {
     document.getElementById("mass-result").innerHTML = `${val} kilograms = ${(val*2.204).toFixed(3)} pounds | ${val} kilograms = ${(val/2.204).toFixed(3)} pounds`
 })
 
+
+input.addEventListener("keypress", function(event) {
+    // If the user presses the "Enter" key on the keyboard
+    if (event.key === "Enter") {
+      // Cancel the default action, if needed
+      event.preventDefault();
+      // Trigger the button element with a click
+      convertBtn.click();
+    }
+  });
+
 function lightDark() {
    let element = document.body;
    element.classList.toggle("dark-mode");
